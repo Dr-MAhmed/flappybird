@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flappy Bird</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="score">0</div>
+        <div id="bird">
+            <div class="wing" style="top: 15px; left: 5px;"></div>
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="beak"></div>
+        </div>
+        <div id="ground"></div>
+        <div id="help-button">?</div>
+        
+        <div id="start-screen">
+            <h1>Flappy Bird</h1>
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <div class="instruction-point">
+                    <div class="number">1</div>
+                    <div>Press <span class="control-icon">Space</span> or <span class="control-icon">Click</span> to make the bird flap</div>
+                </div>
+                <div class="instruction-point">
+                    <div class="number">2</div>
+                    <div>Navigate through the gaps between the pipes</div>
+                </div>
+                <div class="instruction-point">
+                    <div class="number">3</div>
+                    <div>Each pipe you pass increases your score</div>
+                </div>
+                <div class="instruction-point">
+                    <div class="number">4</div>
+                    <div>Don't hit the pipes or the ground!</div>
+                </div>
+                <div class="instruction-point">
+                    <div class="number">5</div>
+                    <div>Press the <span class="control-icon">?</span> button anytime to see instructions</div>
+                </div>
+            </div>
+            <button id="start-button">Start Game</button>
+        </div>
+        
+        <div id="help-screen">
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <div class="instruction-point">
+                    <div class="number">1</div>
+                    <div>Press <span class="control-icon">Space</span> or <span class="control-icon">Click</span> to make the bird flap</div>
+                </div>
+                <div class="instruction-point">
+                    <div class="number">2</div>
+                    <div>Navigate through the gaps between the pipes</div>
+                </div>
+                <div class="instruction-point">
+                    <div class="number">3</div>
+                    <div>Each pipe you pass increases your score</div>
+                </div>
+                <div class="instruction-point">
+                    <div class="number">4</div>
+                    <div>Don't hit the pipes or the ground!</div>
+                </div>
+            </div>
+            <button id="continue-button">Continue</button>
+        </div>
+        
+        <div id="game-over">
+            <h1>Game Over</h1>
+            <p>Your score: <span id="final-score">0</span></p>
+            <p id="high-score-display">High score: 0</p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
