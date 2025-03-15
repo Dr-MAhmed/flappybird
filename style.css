@@ -8,7 +8,9 @@ body {
     background-color: #f7f7f7;
     font-family: Arial, sans-serif;
 }
-
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 #game-container {
     position: relative;
     width: 360px;
