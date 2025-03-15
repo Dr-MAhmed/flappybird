@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const helpScreen = document.getElementById('help-screen');
     const continueButton = document.getElementById('continue-button');
     const highScoreDisplay = document.getElementById('high-score-display');
+    const wooshSound = new Audio('woosh.mp3')
     
     let gameStarted = false;
     let gameOver = false;
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gameOver = false;
         gamePaused = false;
         startScreen.style.display = 'none';
+        wooshSound.play()
         
         // Get actual bird dimensions after the game has started
         birdY = parseInt(window.getComputedStyle(bird).getPropertyValue('top'));
@@ -130,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (gameOver || gamePaused) return;
         
         velocity = -8;
+        wooshSound.play()
     }
     
     function createPipe() {
